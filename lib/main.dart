@@ -1,6 +1,6 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
-import 'package:gizera_club/features/home/screens/home_screen.dart';
+import 'package:gizera_club/features/authorization/authorization_screens/login_screen.dart';
 import 'package:gizera_club/router.dart';
 void main() {
   runApp(const MyApp());
@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'GSC Reddit',
       onGenerateRoute: (settings) => generateRoute(settings),
-      home: const HomeScreen(),
+      home: const LoginScreen(),
     );
   }
 }
