@@ -18,17 +18,6 @@ class CustomeTextField extends StatelessWidget {
         obscureText: hideText,
         decoration: GlobalVariables.kTextFieldDecoration.copyWith(labelText: fieldName),
       )
-      //   decoration: InputDecoration(
-      //     border: const OutlineInputBorder(
-      //       borderSide: BorderSide(color:GlobalVariables.mainColor),
-      //     ),
-      //     enabledBorder:const OutlineInputBorder(
-      //       borderSide: BorderSide(color:GlobalVariables.mainColor ),
-      //     ),
-      //     labelText: fieldName,
-      //   ),
-      //
-      // ),
     );
   }
 }

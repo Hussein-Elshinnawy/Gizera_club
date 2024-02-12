@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gizera_club/commons/widgets/custom_button.dart';
 import 'package:gizera_club/commons/widgets/custom_textfield.dart';
+import 'package:gizera_club/constants/global_variables.dart';
 
 class LoginScreen extends StatefulWidget {
   static const routeName = '/login';
@@ -24,17 +26,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 Image.asset("assets/gsc_logo.png"),
                 const CustomeTextField(fieldName: 'User Name', textInputType: TextInputType.emailAddress,),
                 const CustomeTextField(hideText: true, fieldName: 'Password',),
-                TextButton(
-                  onPressed: () {},
-                  child: Text('login'),
-                ),
+                CustomButton(pressed: (){}, buttonText: 'Login'),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text('Don\'t have an account'),
                     TextButton(
                       onPressed: () {},
-                      child:const Text('register'),
+                      child:const Text('register', style: TextStyle(decoration: TextDecoration.underline, color: GlobalVariables.mainColor ),),
                     ),
                   ],
                 )
