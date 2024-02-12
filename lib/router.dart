@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gizera_club/features/authorization/authorization_screens/login_screen.dart';
+import 'package:gizera_club/features/authorization/authorization_screens/register_screen.dart';
 import 'package:gizera_club/features/home/screens/home_screen.dart';
 
 Route<dynamic> generateRoute(RouteSettings routeSettings) {
@@ -11,6 +12,10 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
     case LoginScreen.routeName:
       return MaterialPageRoute(
         builder: (_) => const LoginScreen(),
+      );
+    case RegisterScreen.routeName:
+      return MaterialPageRoute(
+        builder: (_) =>  RegisterScreen(),
       );
     default:
       return MaterialPageRoute(

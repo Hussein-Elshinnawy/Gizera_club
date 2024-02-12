@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:gizera_club/constants/global_variables.dart';
-class CustomeTextField extends StatelessWidget {
+class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
   final bool hideText;
   final String fieldName;
   final TextInputType textInputType;
-  const CustomeTextField({super.key,  this.hideText=false, required this.fieldName, this.textInputType=TextInputType.text, required this.controller });
+  const CustomTextField({super.key,  this.hideText=false, required this.fieldName, this.textInputType=TextInputType.text, required this.controller });
 
   @override
   Widget build(BuildContext context) {

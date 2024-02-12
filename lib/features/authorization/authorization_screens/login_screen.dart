@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gizera_club/commons/widgets/custom_button.dart';
 import 'package:gizera_club/commons/widgets/custom_textfield.dart';
 import 'package:gizera_club/constants/global_variables.dart';
+import 'package:gizera_club/features/authorization/authorization_screens/register_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   static const routeName = '/login';
@@ -13,7 +14,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final _signinFromKey = GlobalKey<FormState>();
+  final _signInFromKey = GlobalKey<FormState>();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   @override
@@ -31,24 +32,24 @@ class _LoginScreenState extends State<LoginScreen> {
           padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 20),
           child: SingleChildScrollView(
             child: Form(
-              key: _signinFromKey,
+              key: _signInFromKey,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset("assets/gsc_logo.png"),
-                  CustomeTextField(
+                  CustomTextField(
                     fieldName: 'Email',
                     textInputType: TextInputType.emailAddress,
                     controller: _emailController,
                   ),
-                  CustomeTextField(
+                  CustomTextField(
                     hideText: true,
                     fieldName: 'Password',
                     controller: _passwordController,
                   ),
                   CustomButton(
                       pressed: () {
-                        if (_signinFromKey.currentState!.validate()) {
+                        if (_signInFromKey.currentState!.validate()) {
                           // signInUser();
                         }
                       },
@@ -62,7 +63,9 @@ class _LoginScreenState extends State<LoginScreen> {
                           padding: const EdgeInsets.all(0),
                           minimumSize: Size.zero,
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, RegisterScreen.routeName);
+                        },
                         child: const Text(
                           'register',
                           style: TextStyle(
