@@ -19,8 +19,6 @@ class CustomeTextField extends StatelessWidget {
         validator: (val){
           if(val == null || val.isEmpty){
             return 'Enter your $fieldName';
-          }else if(!val.contains('@')&&fieldName=='Email'){
-            return 'that is invalid Email';
           }
           return null;
         },
