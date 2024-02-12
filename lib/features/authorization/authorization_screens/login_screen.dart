@@ -32,7 +32,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     const Text('Don\'t have an account '),
                     TextButton(
-
                       style: TextButton.styleFrom(
                         padding: const EdgeInsets.all(0) ,
                         minimumSize: Size.zero,
