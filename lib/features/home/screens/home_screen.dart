@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'package:gizera_club/constants/global_variables.dart';
+import 'package:gizera_club/commons/widgets/custom_post.dart';
 class HomeScreen extends StatefulWidget {
-  static const routeName='/home';
+  static const routeName = '/home';
   const HomeScreen({super.key});
 
   @override
@@ -11,10 +12,22 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('home page'),
+    return Scaffold(
+      backgroundColor: GlobalVariables.greyBackgroundColor,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            // crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              CustomPost(),
+              CustomPost(),
+              CustomPost(),
+            ],
+          ),
+        ),
       ),
     );
   }
 }
+
