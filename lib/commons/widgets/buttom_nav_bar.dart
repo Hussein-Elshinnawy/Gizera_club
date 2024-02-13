@@ -39,9 +39,9 @@ class _ButtonNavBarState extends State<ButtonNavBar> {
         // unselectedItemColor: Variables.unselectedNavBarColor,
         // backgroundColor: Variables.backgroundColor,
         onTap: updatePage,
-        items: const [
+        items:[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined),
+              icon:_page==0? Icon(Icons.home): Icon(Icons.home_outlined),
             label: 'home',
           ),
           BottomNavigationBarItem(
@@ -49,7 +49,7 @@ class _ButtonNavBarState extends State<ButtonNavBar> {
             label: 'post',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle_outlined),
+            icon:_page==2 ? Icon(Icons.account_circle_rounded): Icon(Icons.account_circle_outlined),
             label: 'profile',
           ),
         ],
