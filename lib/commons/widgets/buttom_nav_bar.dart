@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gizera_club/constants/global_variables.dart';
 import 'package:gizera_club/features/home/screens/home_screen.dart';
 
 import '../../features/account/screens/account_screen.dart';
@@ -34,26 +35,22 @@ class _ButtonNavBarState extends State<ButtonNavBar> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _page,
         iconSize: 28,
+        selectedItemColor: GlobalVariables.mainColor,
+        // unselectedItemColor: Variables.unselectedNavBarColor,
+        // backgroundColor: Variables.backgroundColor,
         onTap: updatePage,
-        items: [
+        items: const [
           BottomNavigationBarItem(
-            icon: Container(
-              child: const Icon(Icons.home_outlined),
-            ),
-            label: '',
+            icon: Icon(Icons.home_outlined),
+            label: 'home',
           ),
           BottomNavigationBarItem(
-            icon: Container(
-
-              child: const Icon(Icons.add),
-            ),
-            label: '',
+            icon: Icon(Icons.add),
+            label: 'post',
           ),
           BottomNavigationBarItem(
-            icon: Container(
-              child: const Icon(Icons.account_circle_outlined),
-            ),
-            label: '',
+            icon: Icon(Icons.account_circle_outlined),
+            label: 'profile',
           ),
         ],
 

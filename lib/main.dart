@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:gizera_club/constants/global_variables.dart';
 import 'package:gizera_club/features/authorization/authorization_screens/login_screen.dart';
 import 'package:gizera_club/router.dart';
 void main() {
@@ -24,6 +25,10 @@ class _MyAppState extends State<MyApp> {
       DeviceOrientation.portraitDown,
     ]);
     return MaterialApp(
+      // theme: ThemeData(
+      //   scaffoldBackgroundColor:Colors.white,
+      //   colorScheme: const ColorScheme.light(primary: GlobalVariables.mainColor ),
+      // ),
       debugShowCheckedModeBanner: false,
       title: 'GSC Reddit',
       onGenerateRoute: (settings) => generateRoute(settings),

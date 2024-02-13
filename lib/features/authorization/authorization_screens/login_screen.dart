@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gizera_club/commons/widgets/button_nav_bar.dart';
+import 'package:gizera_club/commons/widgets/buttom_nav_bar.dart';
 import 'package:gizera_club/commons/widgets/custom_button.dart';
 import 'package:gizera_club/commons/widgets/custom_textfield.dart';
 import 'package:gizera_club/constants/global_variables.dart';

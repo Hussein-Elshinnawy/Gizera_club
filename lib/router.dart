@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gizera_club/commons/widgets/button_nav_bar.dart';
+import 'package:gizera_club/commons/widgets/buttom_nav_bar.dart';
 import 'package:gizera_club/features/authorization/authorization_screens/login_screen.dart';
 import 'package:gizera_club/features/authorization/authorization_screens/register_screen.dart';
 import 'package:gizera_club/features/home/screens/home_screen.dart';
