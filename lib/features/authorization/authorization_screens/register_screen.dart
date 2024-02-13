@@ -49,6 +49,7 @@ class RegisterScreen extends StatelessWidget {
                       pressed: () {
                         if (_registerFormKey.currentState!.validate()) {
                           // signInUser();
+                          // Navigator.pop(context);
                         }
                       },
                       buttonText: 'Register'),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gizera_club/commons/widgets/button_nav_bar.dart';
 import 'package:gizera_club/commons/widgets/custom_button.dart';
 import 'package:gizera_club/commons/widgets/custom_textfield.dart';
 import 'package:gizera_club/constants/global_variables.dart';
@@ -51,6 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       pressed: () {
                         if (_signInFromKey.currentState!.validate()) {
                           // signInUser();
+                          Navigator.pushNamedAndRemoveUntil(context, ButtonNavBar.routeName, (route) => false);
                         }
                       },
                       buttonText: 'Login'),
