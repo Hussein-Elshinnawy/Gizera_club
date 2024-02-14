@@ -23,6 +23,7 @@ class GlobalVariables {
   );
   static const postButtonStyle= ButtonStyle(
     iconColor: MaterialStatePropertyAll(Colors.black45),
+    padding: MaterialStatePropertyAll(EdgeInsets.symmetric(vertical:0, horizontal:10)),
   );
   static const postTextButtonStyle= TextStyle(
     color: Colors.black54,

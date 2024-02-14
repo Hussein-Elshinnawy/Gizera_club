@@ -12,8 +12,6 @@ class CustomPost extends StatefulWidget {
 
 class _CustomPostState extends State<CustomPost> {
   double postVotes = 0;
-
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -80,6 +78,7 @@ class _CustomPostState extends State<CustomPost> {
                 Padding(
                   padding: const EdgeInsets.all(2.0),
                   child: OutlinedButton(
+
                     style: GlobalVariables.postButtonStyle,
                     onPressed: () {},
                     child: const Icon(
