@@ -32,28 +32,33 @@ class _ButtonNavBarState extends State<ButtonNavBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: pages[_page],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _page,
-        iconSize: 28,
-        selectedItemColor: GlobalVariables.mainColor,
-        // unselectedItemColor: Variables.unselectedNavBarColor,
-        // backgroundColor: Variables.backgroundColor,
-        onTap: updatePage,
-        items:[
-          BottomNavigationBarItem(
-              icon:_page==0? Icon(Icons.home): Icon(Icons.home_outlined),
-            label: 'home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.add),
-            label: 'post',
-          ),
-          BottomNavigationBarItem(
-            icon:_page==2 ? Icon(Icons.account_circle_rounded): Icon(Icons.account_circle_outlined),
-            label: 'profile',
-          ),
-        ],
-
+      bottomNavigationBar: Container(
+        decoration:const BoxDecoration(
+            color: Colors.white,
+            border: Border(top: BorderSide(color: Colors.black12, width: 1))),
+        child: BottomNavigationBar(
+          currentIndex: _page,
+          iconSize: 28,
+          selectedItemColor: GlobalVariables.mainColor,
+          // unselectedItemColor: Variables.unselectedNavBarColor,
+          // backgroundColor: Variables.backgroundColor,
+          onTap: updatePage,
+          items:[
+            BottomNavigationBarItem(
+                icon:_page==0? Icon(Icons.home): Icon(Icons.home_outlined),
+              label: 'home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.add),
+              label: 'post',
+            ),
+            BottomNavigationBarItem(
+              icon:_page==2 ? Icon(Icons.account_circle_rounded): Icon(Icons.account_circle_outlined),
+              label: 'profile',
+            ),
+          ],
+        
+        ),
       ),
     );
   }
