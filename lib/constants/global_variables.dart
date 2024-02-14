@@ -21,5 +21,18 @@ class GlobalVariables {
       borderRadius: BorderRadius.all(Radius.circular(16.0)),
     ),
   );
+  static const postButtonStyle= ButtonStyle(
+    iconColor: MaterialStatePropertyAll(Colors.black45),
+  );
+  static const postTextButtonStyle= TextStyle(
+    color: Colors.black54,
+    fontWeight: FontWeight.bold,
+  );
+  static const postTitleStyle= TextStyle(
+    color: Colors.black,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+  );
+
 
 }
