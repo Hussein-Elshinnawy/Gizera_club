@@ -14,7 +14,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
+      appBar:CustomAppBar(),
       drawer: CommunityListDrawer(),
       // appBar: CustomAppBar(),
       backgroundColor: GlobalVariables.greyBackgroundColor,

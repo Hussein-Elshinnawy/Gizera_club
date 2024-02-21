@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gizera_club/commons/widgets/custom_appbar.dart';
 import 'package:gizera_club/constants/global_variables.dart';
 import 'package:gizera_club/features/home/screens/home_screen.dart';
 
@@ -32,7 +31,7 @@ class _ButtonNavBarState extends State<ButtonNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(),
+      // appBar: CustomAppBar(),
       body: pages[_page],
       bottomNavigationBar: Container(
         decoration:const BoxDecoration(

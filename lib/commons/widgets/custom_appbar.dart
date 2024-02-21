@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gizera_club/features/home/drawers/community_list_drawer.dart';
 import 'package:gizera_club/features/search/screens/search_screen.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -16,16 +15,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             color: Colors.transparent,
             height: 42,
             // margin: const EdgeInsets.only(left: 0),
-            child: IconButton(
-              onPressed: () {
-                  Scaffold.of(context).openDrawer();
-              },
-              icon: const Icon(
-                Icons.menu,
-                color: Colors.black,
-                size: 35,
-              ),
-            ),
+            // child: IconButton(
+            //   onPressed: () {
+            //       Scaffold.of(context).openDrawer();
+            //   },
+            //   icon: IconButton(onPressed: () { Navigator.pushNamed(context, CommunityListDrawer.routeName);}, icon: const Icon(Icons.menu),
+            //   ),
+            // ),
           ),
           Container(
             color: Colors.transparent,
@@ -43,7 +39,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                     size: 35,
                   ),
                 ),
-                CircleAvatar(
+                const CircleAvatar(
                   foregroundImage: AssetImage("assets/avatar.jpg"),
                 ),
               ],
