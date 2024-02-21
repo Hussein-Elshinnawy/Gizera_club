@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gizera_club/constants/global_variables.dart';
 import 'package:gizera_club/features/home/screens/home_screen.dart';
 
-import '../../features/account/screens/account_screen.dart';
+// import '../../features/account/screens/account_screen.dart';
 import '../../features/post/screens/post_screen.dart';
 class ButtonNavBar extends StatefulWidget {
   static const routeName='/main-page';
@@ -18,7 +18,7 @@ class _ButtonNavBarState extends State<ButtonNavBar> {
   List<Widget> pages = [
     const HomeScreen(),
     const PostScreen(),
-    const AccountScreen(),
+    // const AccountScreen(),
   ];
 
   void updatePage(int page){
@@ -53,10 +53,10 @@ class _ButtonNavBarState extends State<ButtonNavBar> {
               icon: Icon(Icons.add),
               label: 'post',
             ),
-            BottomNavigationBarItem(
-              icon:_page==2 ? Icon(Icons.account_circle_rounded): Icon(Icons.account_circle_outlined),
-              label: 'profile',
-            ),
+            // BottomNavigationBarItem(
+            //   icon:_page==2 ? Icon(Icons.account_circle_rounded): Icon(Icons.account_circle_outlined),
+            //   label: 'profile',
+            // ),
           ],
         
         ),
