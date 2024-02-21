@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gizera_club/features/home/drawers/community_list_drawer.dart';
 import 'package:gizera_club/features/search/screens/search_screen.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -16,7 +17,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             height: 42,
             // margin: const EdgeInsets.only(left: 0),
             child: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                  Scaffold.of(context).openDrawer();
+              },
               icon: const Icon(
                 Icons.menu,
                 color: Colors.black,

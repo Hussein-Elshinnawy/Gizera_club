@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gizera_club/commons/widgets/custom_appbar.dart';
 import 'package:gizera_club/constants/global_variables.dart';
 import 'package:gizera_club/commons/widgets/custom_post.dart';
+import 'package:gizera_club/features/home/drawers/community_list_drawer.dart';
 class HomeScreen extends StatefulWidget {
   static const routeName = '/home';
   const HomeScreen({super.key});
@@ -13,7 +14,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
+      drawer: CommunityListDrawer(),
       // appBar: CustomAppBar(),
       backgroundColor: GlobalVariables.greyBackgroundColor,
       body: SafeArea(
